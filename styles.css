@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+ *{
+    box-sizing: border-box;
+ }
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.logo-container{
+    z-index: 1;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.nav {
+    position: fixed;
+    top: 0;
+    transform: translateX(-655px);
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    transition: transform 0.5s ease;
+    
+  }
+  
+  .nav.open {
+    transform: translateX(0);
+  }
+
+  .nav-black {
+    transition: transform 2.0s ease;
+    position: absolute;
+    top: 0;
+    left: 107%;
+    width: 7%;
+    height: 90%;
+    background: linear-gradient(to right, black 50%, black 50%);
+    background-size: 5% 100%;
+  }
+
+  
+  .nav-red {
+    transition: transform 1.5s ease;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 7%;
+    height: 90%;
+    background: linear-gradient(to right, red 50%, red 50%);
+    background-size: 5% 100%;
+  }
+
+.nav-white {
+  left: -1440%;
+  transition: transform 1.5s ease;
+}
+
+
+
+  .nav-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    left:250px;
+    width: 30px;
+  }
+  
+  .list {
+    padding: 20px;
+    list-style: none;
+  }
+  
+  .list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .logo {
+    width: 150px;
+    margin: 20px;
+  }
+    
